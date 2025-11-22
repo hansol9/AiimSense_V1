@@ -428,43 +428,154 @@ section {
 
 /* ==================== TEAM STYLES ==================== */
 .team {
-  background-color: #f9fafb;
+  background-color: #1d8fce;
+  padding: 100px 40px; /* 70px 50px → 60px 40px */
+  border-radius: 15px;
+  margin: 80px auto;
+  max-width: 1300px; /* 1400px → 1300px (파란 박스 더 크게) */
 }
 
 .team-content {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 .team h2 {
   font-size: 42px;
-  color: #1a1a1a;
-  margin-bottom: 30px;
+  color: #ffffff;
+  margin-bottom: 20px; /* 25px → 20px */
+  font-weight: 700;
 }
 
 .team-description {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 30px;
+  font-size: 16px; /* 16px → 15px */
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 30px; /* 40px → 30px (흰색 박스와 간격 줄임) */
+  padding: 0 40px; /* 60px → 40px */
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-mission {
-  font-size: 20px;
-  color: #0066cc;
-  font-weight: 600;
-  line-height: 1.8;
+  font-size: 16px; /* 16px → 15px */
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 30px; /* 40px → 30px (흰색 박스와 간격 줄임) */
+  padding: 0 40px; /* 60px → 40px */
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 슬라이더 컨테이너 */
+.partner-slider-wrapper {
+  position: relative;
+  padding: 0 5px;
+}
+
+/* 흰색 박스 컨테이너 */
+.partner-box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 40px; /* 30px 40px → 40px 50px (높이 증가) */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* 슬라이더 아이템 */
+.partner-logo-item {
+  padding: 20px; /* 15px → 20px */
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 140px; /* 120px → 140px (높이 증가) */
+}
+
+.partner-logo-item img {
+  width: 100%;
+  max-width: 450px; /* 180px → 220px (이미지 크기 증가) */
+  max-height: 220px; /* 90px → 110px (높이 증가) */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Slick 슬라이더 화살표 */
+.partner-slider-wrapper .slick-prev,
+.partner-slider-wrapper .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.partner-slider-wrapper .slick-prev:before,
+.partner-slider-wrapper .slick-next:before {
+  font-size: 40px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.partner-slider-wrapper .slick-prev:hover:before,
+.partner-slider-wrapper .slick-next:hover:before {
+  opacity: 1;
+}
+
+.partner-slider-wrapper .slick-prev {
+  left: 0;
+}
+
+.partner-slider-wrapper .slick-next {
+  right: 0;
+}
+
+@media (max-width: 1200px) {
+  .partner-slider-wrapper {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 768px) {
+  .team {
+    margin: 40px 20px;
+    padding: 40px 25px;
+  }
+
   .team h2 {
     font-size: 32px;
   }
 
   .team-description,
   .team-mission {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+  }
+
+  .team-mission {
+    margin-top: 25px;
+  }
+
+  .partner-slider-wrapper {
+    padding: 0 40px;
+  }
+
+  .partner-box {
+    padding: 25px 20px;
+  }
+
+  .partner-logo-item {
+    padding: 10px;
+    height: 100px;
+  }
+
+  .partner-logo-item img {
+    max-width: 150px;
+    max-height: 70px;
   }
 }
 
@@ -721,119 +832,112 @@ section {
 
 /* ==================== CONTACT STYLES ==================== */
 .contact {
-  background-color: #f9fafb;
+  background-color: #1d8fce;
+  padding: 120px 30px 120px 30px;
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 1400px;
 }
 
 .contact-content {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .contact h2 {
-  font-size: 42px;
+  font-size: 48px;
   text-align: center;
-  color: #1a1a1a;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .contact-intro {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  color: #555;
-  margin-bottom: 50px;
-  line-height: 1.8;
+  color: #ffffff;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: 60% 40%;
+  gap: 40px;
+  align-items: center;
 }
 
-.contact-info {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.contact-info h3 {
-  font-size: 28px;
-  color: #0066cc;
-  margin-bottom: 20px;
-}
-
-.contact-info .address {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.contact-info .email,
-.contact-info .phone {
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-.contact-info a {
-  color: #0066cc;
-  transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-  color: #004499;
-  text-decoration: underline;
-}
-
+/* Contact Form (왼쪽 - 60%) */
 .contact-form {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 19px;
+}
+
+.form-group label .required {
+  color: #ff0000; /* 빨간색 */
+  margin-left: 2px;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 15px;
+  padding: 15px 14px;
   font-size: 16px;
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
+  line-height: 19px;
+  border: none;
+  border-radius: 0;
   font-family: inherit;
-  transition: border-color 0.3s ease;
+  background-color: #ffffff;
+  color: #111111;
+  height: 43px;
+  box-sizing: border-box;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #0066cc;
 }
 
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
+  height: auto;
+  padding: 12px 14px;
 }
 
 .submit-btn {
-  width: 100%;
-  padding: 15px;
-  font-size: 18px;
+  padding: 0 15px;
+  height: 41px;
+  font-size: 17px;
   font-weight: 600;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #034a78;
+  color: #ffffff;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
 .submit-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+  background-color: #023456;
 }
 
 .submit-btn:disabled {
@@ -842,43 +946,109 @@ section {
 }
 
 .status-message {
-  margin-top: 15px;
-  padding: 12px;
-  border-radius: 8px;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 0;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
 }
 
 .status-message.success {
-  background-color: #d1fae5;
-  color: #065f46;
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #ffffff;
 }
 
 .status-message.error {
-  background-color: #fee2e2;
-  color: #991b1b;
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #ffffff;
 }
 
+/* Contact Info (오른쪽 - 40%) */
+.contact-info {
+  color: #ffffff;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.info-item .icon {
+  font-size: 25px;
+  flex-shrink: 0;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.info-item .info-text {
+  color: #ffffff;
+}
+
+.info-item h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 3px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.info-item p {
+  font-size: 21px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.info-item a {
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 */
 @media (max-width: 968px) {
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
+  }
+
+  .contact-info {
+    padding-left: 0;
   }
 }
 
 @media (max-width: 768px) {
+  .contact {
+    margin: 30px 20px;
+    padding: 50px 20px;
+  }
+
   .contact h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
-  .contact-info,
-  .contact-form {
-    padding: 30px 20px;
+  .contact-intro {
+    font-size: 15px;
+    margin-bottom: 30px;
   }
 
-  .contact-info h3 {
-    font-size: 24px;
+  .form-group input,
+  .form-group textarea {
+    font-size: 15px;
+  }
+
+  .info-item {
+    margin-bottom: 18px;
   }
 }
 

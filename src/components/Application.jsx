@@ -14,7 +14,7 @@ function Application() {
         "Improves patient care and workflow efficiency",
       ],
       image:
-        "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2025/03/Bedside-hospital-transparent.png",
+        "https://aiimsense.com/wp-content/uploads/2025/03/Bedside-hospital-transparent.png",
       bgColor: "#e8f4f8",
     },
     {
@@ -25,7 +25,7 @@ function Application() {
         "Resource-limited friendly design",
       ],
       image:
-        "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2025/03/Bedside-hospital-transparent.png",
+        "https://aiimsense.com/wp-content/uploads/2025/03/Bedside-hospital-transparent.png",
       bgColor: "#fff5e8",
     },
     {
@@ -36,7 +36,7 @@ function Application() {
         "Portable for mobile medical units",
       ],
       image:
-        "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2025/03/Ambulance-transparent.png",
+        "https://aiimsense.com/wp-content/uploads/2025/03/Ambulance-transparent.png",
       bgColor: "#f0e8f4",
     },
     {
@@ -47,7 +47,7 @@ function Application() {
         "Emergency response scenarios",
       ],
       image:
-        "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2025/10/military-transparent.webp",
+        "https://aiimsense.com/wp-content/uploads/2025/10/military-transparent.webp",
       bgColor: "#e8f8f0",
     },
   ];

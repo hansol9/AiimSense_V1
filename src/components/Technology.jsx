@@ -43,7 +43,7 @@ function Technology() {
         <div className="brainscreen-section">
           <div className="brainscreen-image">
             <img
-              src="https://aiimsense-stage.andyioi.ca/wp-content/uploads/2025/03/Bedside-device-transparent.png"
+              src="https://aiimsense.com/wp-content/uploads/2025/03/Bedside-device-transparent.png"
               alt="BrainScreen Device"
             />
           </div>

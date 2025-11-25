@@ -41,15 +41,15 @@ function Team() {
   };
 
   const partnerLogos = [
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/02/6-13.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/02/6-12.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/01/5-1.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/01/6-7.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/01/6-9.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/01/6-10.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/01/3-10.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/01/1-13.jpg",
-    "https://aiimsense-stage.andyioi.ca/wp-content/uploads/2022/01/2-10.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/02/6-13.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/02/6-12.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/01/5-1.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/01/6-7.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/01/6-9.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/01/6-10.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/01/3-10.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/01/1-13.jpg",
+    "https://aiimsense.com/wp-content/uploads/2022/01/2-10.jpg",
   ];
 
   return (

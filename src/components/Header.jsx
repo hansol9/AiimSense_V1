@@ -45,7 +45,7 @@ function Header() {
             Mission
           </Link>
           <Link 
-            to="why-choose" 
+            to="whychoose" 
             smooth={true} 
             duration={500}
             onClick={() => setMenuOpen(false)}

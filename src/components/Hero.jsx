@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroBg from "../assets/images/Technology-Section-1024x492.jpg"; // Ensure you have an image at this path
+import heroBg from "../assets/images/Technology-Section-1024x492.jpg"; 
 
 const Hero = () => (
   <section
@@ -28,7 +28,7 @@ const Hero = () => (
           zIndex: 2,
           maxWidth: "500px",
           textAlign: "left",
-          paddingLeft: "60px",
+          // paddingLeft: "60px",
         }}
       >
         <h1
@@ -37,7 +37,7 @@ const Hero = () => (
             fontFamily: "'Roboto Slab', serif",
             color: "#1A88DA",
             fontWeight: 800,
-            fontSize: 46,
+            // fontSize: 46,
             lineHeight: 1.2,
             marginBottom: 22,
             textAlign: "left",
@@ -54,7 +54,7 @@ const Hero = () => (
           style={{
             color: "#222",
             fontSize: 16,
-            marginBottom: 26,
+            // marginBottom: 60,
             textAlign: "left",
           }}
         >
